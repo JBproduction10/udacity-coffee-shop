@@ -1,0 +1,490 @@
+{
+	"info": {
+		"_postman_id": "8e14a440-304d-4d6b-b8de-2cf8d2824418",
+		"name": "Udacity-coffee-shop",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "11968583"
+	},
+	"item": [
+		{
+			"name": "Clients",
+			"item": [
+				{
+					"name": "New Request",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "get-drinks",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:5000/drinks",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"drinks"
+							]
+						},
+						"description": "get all drinks success 200"
+					},
+					"response": []
+				},
+				{
+					"name": "get drinks-detail",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:5000/drinks-detail",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"drinks-detail"
+							]
+						},
+						"description": "Failed getting drinks-details, authorization token needed"
+					},
+					"response": []
+				},
+				{
+					"name": "post drinks",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:5000/drinks",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"drinks"
+							]
+						},
+						"description": "Failed post drinks authorization header needed"
+					},
+					"response": []
+				},
+				{
+					"name": "patch drinks/1",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:5000/drinks/1",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"drinks",
+								"1"
+							]
+						},
+						"description": "Failed to patch drinks authorization headers needed"
+					},
+					"response": []
+				},
+				{
+					"name": "delete drinks/1",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:5000/drinks/1",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"drinks",
+								"1"
+							]
+						},
+						"description": "Failed to delete drinks, authorization headers needed"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Barista",
+			"item": [
+				{
+					"name": "get drinks",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:5000/drinks",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"drinks"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get drinks-detail",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6Imo5ZUczTEpJeG1HYjd6MjdJSVBIMSJ9.eyJpc3MiOiJodHRwczovL2Z1bGxzdGFjay1kZXYtd29ybGQudXMuYXV0aDAuY29tLyIsInN1YiI6ImF1dGgwfDYzMGNiNGY4NTJhODVlMzc3Njk0M2FkNiIsImF1ZCI6ImRyaW5rcyIsImlhdCI6MTY2MTg2MzUyMywiZXhwIjoxNjYxODcwNzIzLCJhenAiOiJCSnhnMUpGajUwRlROeTJ5MXhMbkpQYVM5T1VnYXJTeCIsInNjb3BlIjoiIiwicGVybWlzc2lvbnMiOlsiZ2V0OmRyaW5rcyIsImdldDpkcmlua3MtZGV0YWlsIl19.s-lY8L0xJ3rFm0gnBspwQnGSbGRuZhMWym4JDxQQEgZIZfeAHZ1jA8tAx2YD0ADr9Icxyr2pDGj-Ca8DOL6Pc5VUF0HXKaHoUDaCJMZd_wdOPoB91SXIVWWh5c1n5KPHZjGBSNzAnHgbAoIbVx2G8gFUE0h4YVMV68IxQG-_I5T_P7LbdiRmXpWhLooPVwJx8HqK6sOvAAg3nD3bIajXHt2u4WjHfw-mH_AiKtNSlgt8qN4bfHaWevSiRVTjONvflEIuvpxdueR1sqxgWO93lRxjja08kp1ClfL2D-e0aAKsBCpbULHRvPb1AaKQLOE0oW3ckbTDOusiZj7B1CkkUA",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://127.0.0.1:5000/drinks-detail",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"drinks-detail"
+							]
+						},
+						"description": "success 200 authorized headers"
+					},
+					"response": []
+				},
+				{
+					"name": "post drinks",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6Imo5ZUczTEpJeG1HYjd6MjdJSVBIMSJ9.eyJpc3MiOiJodHRwczovL2Z1bGxzdGFjay1kZXYtd29ybGQudXMuYXV0aDAuY29tLyIsInN1YiI6ImF1dGgwfDYzMGNiNGY4NTJhODVlMzc3Njk0M2FkNiIsImF1ZCI6ImRyaW5rcyIsImlhdCI6MTY2MTg2MzUyMywiZXhwIjoxNjYxODcwNzIzLCJhenAiOiJCSnhnMUpGajUwRlROeTJ5MXhMbkpQYVM5T1VnYXJTeCIsInNjb3BlIjoiIiwicGVybWlzc2lvbnMiOlsiZ2V0OmRyaW5rcyIsImdldDpkcmlua3MtZGV0YWlsIl19.s-lY8L0xJ3rFm0gnBspwQnGSbGRuZhMWym4JDxQQEgZIZfeAHZ1jA8tAx2YD0ADr9Icxyr2pDGj-Ca8DOL6Pc5VUF0HXKaHoUDaCJMZd_wdOPoB91SXIVWWh5c1n5KPHZjGBSNzAnHgbAoIbVx2G8gFUE0h4YVMV68IxQG-_I5T_P7LbdiRmXpWhLooPVwJx8HqK6sOvAAg3nD3bIajXHt2u4WjHfw-mH_AiKtNSlgt8qN4bfHaWevSiRVTjONvflEIuvpxdueR1sqxgWO93lRxjja08kp1ClfL2D-e0aAKsBCpbULHRvPb1AaKQLOE0oW3ckbTDOusiZj7B1CkkUA",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://127.0.0.1:5000/drinks",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"drinks"
+							]
+						},
+						"description": "Barista post drinks failed permission not found"
+					},
+					"response": []
+				},
+				{
+					"name": "patch drinks/1",
+					"request": {
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6Imo5ZUczTEpJeG1HYjd6MjdJSVBIMSJ9.eyJpc3MiOiJodHRwczovL2Z1bGxzdGFjay1kZXYtd29ybGQudXMuYXV0aDAuY29tLyIsInN1YiI6ImF1dGgwfDYzMGNiNGY4NTJhODVlMzc3Njk0M2FkNiIsImF1ZCI6ImRyaW5rcyIsImlhdCI6MTY2MTg2MzUyMywiZXhwIjoxNjYxODcwNzIzLCJhenAiOiJCSnhnMUpGajUwRlROeTJ5MXhMbkpQYVM5T1VnYXJTeCIsInNjb3BlIjoiIiwicGVybWlzc2lvbnMiOlsiZ2V0OmRyaW5rcyIsImdldDpkcmlua3MtZGV0YWlsIl19.s-lY8L0xJ3rFm0gnBspwQnGSbGRuZhMWym4JDxQQEgZIZfeAHZ1jA8tAx2YD0ADr9Icxyr2pDGj-Ca8DOL6Pc5VUF0HXKaHoUDaCJMZd_wdOPoB91SXIVWWh5c1n5KPHZjGBSNzAnHgbAoIbVx2G8gFUE0h4YVMV68IxQG-_I5T_P7LbdiRmXpWhLooPVwJx8HqK6sOvAAg3nD3bIajXHt2u4WjHfw-mH_AiKtNSlgt8qN4bfHaWevSiRVTjONvflEIuvpxdueR1sqxgWO93lRxjja08kp1ClfL2D-e0aAKsBCpbULHRvPb1AaKQLOE0oW3ckbTDOusiZj7B1CkkUA",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://127.0.0.1:5000/drinks/1",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"drinks",
+								"1"
+							]
+						},
+						"description": "Barista patch drinks permission not found"
+					},
+					"response": []
+				},
+				{
+					"name": "delete drinks/1",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6Imo5ZUczTEpJeG1HYjd6MjdJSVBIMSJ9.eyJpc3MiOiJodHRwczovL2Z1bGxzdGFjay1kZXYtd29ybGQudXMuYXV0aDAuY29tLyIsInN1YiI6ImF1dGgwfDYzMGNiNGY4NTJhODVlMzc3Njk0M2FkNiIsImF1ZCI6ImRyaW5rcyIsImlhdCI6MTY2MTg2MzUyMywiZXhwIjoxNjYxODcwNzIzLCJhenAiOiJCSnhnMUpGajUwRlROeTJ5MXhMbkpQYVM5T1VnYXJTeCIsInNjb3BlIjoiIiwicGVybWlzc2lvbnMiOlsiZ2V0OmRyaW5rcyIsImdldDpkcmlua3MtZGV0YWlsIl19.s-lY8L0xJ3rFm0gnBspwQnGSbGRuZhMWym4JDxQQEgZIZfeAHZ1jA8tAx2YD0ADr9Icxyr2pDGj-Ca8DOL6Pc5VUF0HXKaHoUDaCJMZd_wdOPoB91SXIVWWh5c1n5KPHZjGBSNzAnHgbAoIbVx2G8gFUE0h4YVMV68IxQG-_I5T_P7LbdiRmXpWhLooPVwJx8HqK6sOvAAg3nD3bIajXHt2u4WjHfw-mH_AiKtNSlgt8qN4bfHaWevSiRVTjONvflEIuvpxdueR1sqxgWO93lRxjja08kp1ClfL2D-e0aAKsBCpbULHRvPb1AaKQLOE0oW3ckbTDOusiZj7B1CkkUA",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://127.0.0.1:5000/drinks/1",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"drinks",
+								"1"
+							]
+						},
+						"description": "Barista delete drinks permission not found"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Manager",
+			"item": [
+				{
+					"name": "http://127.0.0.1:5000/drinks",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6Imo5ZUczTEpJeG1HYjd6MjdJSVBIMSJ9.eyJpc3MiOiJodHRwczovL2Z1bGxzdGFjay1kZXYtd29ybGQudXMuYXV0aDAuY29tLyIsInN1YiI6ImF1dGgwfDYzMGM4MThhYjcwOTUzOWYyMDI3OGQ4NyIsImF1ZCI6ImRyaW5rcyIsImlhdCI6MTY2MTg2NDA4NywiZXhwIjoxNjYxODcxMjg3LCJhenAiOiJCSnhnMUpGajUwRlROeTJ5MXhMbkpQYVM5T1VnYXJTeCIsInNjb3BlIjoiIiwicGVybWlzc2lvbnMiOlsiZGVsZXRlOmRyaW5rcyIsImdldDpkcmlua3MiLCJnZXQ6ZHJpbmtzLWRldGFpbCIsInBhdGNoOmRyaW5rcyIsInBvc3Q6ZHJpbmtzIl19.SAaGY_vgKS2QchYqJ2jFXNhRKTU-NWNMEH2vEILTwybwZcolkroRVi4sxUJlCjLNLkg1J0MwS5YuhsS1Fy8i7I6yeMSg_O07iZqraPtLP4w67t26_RRX5TQ2vTA5FXUd_Pr9-EkL_7EfTNM_g0OcAgnLwubQ1zmcEDZUyY2ky4D2u-D-9nPLFPc7iyHGsHNxkaufmH8-l7trmeHftfdOPFgKtg6vCltfs9efSz2EcxoHGkCAEWdRtYOOW5k_eI4rIrZ1J6vyAm7ycO8tr74Sk8HApU8oSn6geCKsqffpAOe7j2h8wFU-DYJsNuW-pLDZnLJsqVzPQVdY3AuB5YboLQ",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://127.0.0.1:5000/drinks",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"drinks"
+							]
+						},
+						"description": "Get all drinks"
+					},
+					"response": []
+				},
+				{
+					"name": "http://127.0.0.1:5000/drinks-details",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6Imo5ZUczTEpJeG1HYjd6MjdJSVBIMSJ9.eyJpc3MiOiJodHRwczovL2Z1bGxzdGFjay1kZXYtd29ybGQudXMuYXV0aDAuY29tLyIsInN1YiI6ImF1dGgwfDYzMGM4MThhYjcwOTUzOWYyMDI3OGQ4NyIsImF1ZCI6ImRyaW5rcyIsImlhdCI6MTY2MTg2NDA4NywiZXhwIjoxNjYxODcxMjg3LCJhenAiOiJCSnhnMUpGajUwRlROeTJ5MXhMbkpQYVM5T1VnYXJTeCIsInNjb3BlIjoiIiwicGVybWlzc2lvbnMiOlsiZGVsZXRlOmRyaW5rcyIsImdldDpkcmlua3MiLCJnZXQ6ZHJpbmtzLWRldGFpbCIsInBhdGNoOmRyaW5rcyIsInBvc3Q6ZHJpbmtzIl19.SAaGY_vgKS2QchYqJ2jFXNhRKTU-NWNMEH2vEILTwybwZcolkroRVi4sxUJlCjLNLkg1J0MwS5YuhsS1Fy8i7I6yeMSg_O07iZqraPtLP4w67t26_RRX5TQ2vTA5FXUd_Pr9-EkL_7EfTNM_g0OcAgnLwubQ1zmcEDZUyY2ky4D2u-D-9nPLFPc7iyHGsHNxkaufmH8-l7trmeHftfdOPFgKtg6vCltfs9efSz2EcxoHGkCAEWdRtYOOW5k_eI4rIrZ1J6vyAm7ycO8tr74Sk8HApU8oSn6geCKsqffpAOe7j2h8wFU-DYJsNuW-pLDZnLJsqVzPQVdY3AuB5YboLQ",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://127.0.0.1:5000/drinks-detail",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"drinks-detail"
+							]
+						},
+						"description": "get drinks details"
+					},
+					"response": []
+				},
+				{
+					"name": "http://127.0.0.1:5000/drinks-details",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6Imo5ZUczTEpJeG1HYjd6MjdJSVBIMSJ9.eyJpc3MiOiJodHRwczovL2Z1bGxzdGFjay1kZXYtd29ybGQudXMuYXV0aDAuY29tLyIsInN1YiI6ImF1dGgwfDYzMGM4MThhYjcwOTUzOWYyMDI3OGQ4NyIsImF1ZCI6ImRyaW5rcyIsImlhdCI6MTY2MTg2NDA4NywiZXhwIjoxNjYxODcxMjg3LCJhenAiOiJCSnhnMUpGajUwRlROeTJ5MXhMbkpQYVM5T1VnYXJTeCIsInNjb3BlIjoiIiwicGVybWlzc2lvbnMiOlsiZGVsZXRlOmRyaW5rcyIsImdldDpkcmlua3MiLCJnZXQ6ZHJpbmtzLWRldGFpbCIsInBhdGNoOmRyaW5rcyIsInBvc3Q6ZHJpbmtzIl19.SAaGY_vgKS2QchYqJ2jFXNhRKTU-NWNMEH2vEILTwybwZcolkroRVi4sxUJlCjLNLkg1J0MwS5YuhsS1Fy8i7I6yeMSg_O07iZqraPtLP4w67t26_RRX5TQ2vTA5FXUd_Pr9-EkL_7EfTNM_g0OcAgnLwubQ1zmcEDZUyY2ky4D2u-D-9nPLFPc7iyHGsHNxkaufmH8-l7trmeHftfdOPFgKtg6vCltfs9efSz2EcxoHGkCAEWdRtYOOW5k_eI4rIrZ1J6vyAm7ycO8tr74Sk8HApU8oSn6geCKsqffpAOe7j2h8wFU-DYJsNuW-pLDZnLJsqVzPQVdY3AuB5YboLQ",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"title\": \"Coffee\",\r\n    \"recipe\": {\r\n        \"name\": \"Coffee\",\r\n        \"color\": \"black\",\r\n        \"parts\": 1\r\n    }\r\n}"
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5000/drinks",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"drinks"
+							]
+						},
+						"description": "Post drinks with error 401 not authorized"
+					},
+					"response": []
+				},
+				{
+					"name": "http://127.0.0.1:5000/drinks-details",
+					"request": {
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6Imo5ZUczTEpJeG1HYjd6MjdJSVBIMSJ9.eyJpc3MiOiJodHRwczovL2Z1bGxzdGFjay1kZXYtd29ybGQudXMuYXV0aDAuY29tLyIsInN1YiI6ImF1dGgwfDYzMGM4MThhYjcwOTUzOWYyMDI3OGQ4NyIsImF1ZCI6ImRyaW5rcyIsImlhdCI6MTY2MTg2NDA4NywiZXhwIjoxNjYxODcxMjg3LCJhenAiOiJCSnhnMUpGajUwRlROeTJ5MXhMbkpQYVM5T1VnYXJTeCIsInNjb3BlIjoiIiwicGVybWlzc2lvbnMiOlsiZGVsZXRlOmRyaW5rcyIsImdldDpkcmlua3MiLCJnZXQ6ZHJpbmtzLWRldGFpbCIsInBhdGNoOmRyaW5rcyIsInBvc3Q6ZHJpbmtzIl19.SAaGY_vgKS2QchYqJ2jFXNhRKTU-NWNMEH2vEILTwybwZcolkroRVi4sxUJlCjLNLkg1J0MwS5YuhsS1Fy8i7I6yeMSg_O07iZqraPtLP4w67t26_RRX5TQ2vTA5FXUd_Pr9-EkL_7EfTNM_g0OcAgnLwubQ1zmcEDZUyY2ky4D2u-D-9nPLFPc7iyHGsHNxkaufmH8-l7trmeHftfdOPFgKtg6vCltfs9efSz2EcxoHGkCAEWdRtYOOW5k_eI4rIrZ1J6vyAm7ycO8tr74Sk8HApU8oSn6geCKsqffpAOe7j2h8wFU-DYJsNuW-pLDZnLJsqVzPQVdY3AuB5YboLQ",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"title\": \"Water1\",\r\n    \"recipe\": {\r\n        \"name\": \"Water\",\r\n        \"color\": \"blue\",\r\n        \"parts\": 1\r\n    }\r\n}"
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5000/drinks/1",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"drinks",
+								"1"
+							]
+						},
+						"description": "patch drinks/id with error 401 not authorized"
+					},
+					"response": []
+				},
+				{
+					"name": "http://127.0.0.1:5000/drinks-details",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6Imo5ZUczTEpJeG1HYjd6MjdJSVBIMSJ9.eyJpc3MiOiJodHRwczovL2Z1bGxzdGFjay1kZXYtd29ybGQudXMuYXV0aDAuY29tLyIsInN1YiI6ImF1dGgwfDYzMGM4MThhYjcwOTUzOWYyMDI3OGQ4NyIsImF1ZCI6ImRyaW5rcyIsImlhdCI6MTY2MTg2NDA4NywiZXhwIjoxNjYxODcxMjg3LCJhenAiOiJCSnhnMUpGajUwRlROeTJ5MXhMbkpQYVM5T1VnYXJTeCIsInNjb3BlIjoiIiwicGVybWlzc2lvbnMiOlsiZGVsZXRlOmRyaW5rcyIsImdldDpkcmlua3MiLCJnZXQ6ZHJpbmtzLWRldGFpbCIsInBhdGNoOmRyaW5rcyIsInBvc3Q6ZHJpbmtzIl19.SAaGY_vgKS2QchYqJ2jFXNhRKTU-NWNMEH2vEILTwybwZcolkroRVi4sxUJlCjLNLkg1J0MwS5YuhsS1Fy8i7I6yeMSg_O07iZqraPtLP4w67t26_RRX5TQ2vTA5FXUd_Pr9-EkL_7EfTNM_g0OcAgnLwubQ1zmcEDZUyY2ky4D2u-D-9nPLFPc7iyHGsHNxkaufmH8-l7trmeHftfdOPFgKtg6vCltfs9efSz2EcxoHGkCAEWdRtYOOW5k_eI4rIrZ1J6vyAm7ycO8tr74Sk8HApU8oSn6geCKsqffpAOe7j2h8wFU-DYJsNuW-pLDZnLJsqVzPQVdY3AuB5YboLQ",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://127.0.0.1:5000/drinks/1",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"drinks",
+								"1"
+							]
+						},
+						"description": "delete drinks/id with error 401 not authorized"
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
