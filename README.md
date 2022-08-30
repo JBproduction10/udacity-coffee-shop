@@ -80,4 +80,3 @@ Export collections can be found at : `/backend/Udacity-coffee-shop.postman_colle
 **pycache**
 coffeevenv
 
-https://fullstack-dev-world.us.auth0.com/authorize?audience=drinks&response_type=token&client_id=BJxg1JFj50FTNy2y1xLnJPaS9OUgarSx&redirect_uri=http://127.0.0.1:5000/drinks
